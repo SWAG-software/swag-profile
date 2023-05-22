@@ -1,0 +1,6 @@
+### Get user by ID
+http://localhost:8028/profile/646564830b991786e54f220e
+### Get Playlist by User ID
+http://localhost:8028/profile/playlist/646564830b991786e54f220e
+### Get Favorite artists by User ID
+http://localhost:8028/profile/favArtist/646564830b991786e54f220e

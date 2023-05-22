@@ -1,0 +1,49 @@
+[
+  {
+    "id": "6465ae004ebe8871853d896f",
+    "name": "My fav playlist 1",
+    "songs": [
+      {
+        "id": "6465ad474ebe8871853d8967",
+        "name": "Enemy",
+        "mp3": "https://luvmp.com/wp-content/uploads/2022/01/Imagine-Dragons-Enemy_Luvmp.com_.mp3"
+      },
+      {
+        "id": "6465ad4f4ebe8871853d8968",
+        "name": "Lonely",
+        "mp3": "https://rildi.sunproxy.net/file/Y2FqRDhWSWZjVGxFY0VOL1ZHTG1wNk5qc3NURmVRYmJzYTV2TzBTK1pBak1aQ2F2WUxFc2VOWmlNcUY1eXBGZi84bnFudlY4dS9peDVjME1hWWlReS9xMzhEWnBMYm1RNGRFMUlBSWVKOFE9/Imagine_Dragons_-_Lonely_(Hydr0.org).mp3"
+      },
+      {
+        "id": "6465ad644ebe8871853d896d",
+        "name": "Fashion",
+        "mp3": "https://rildi.sunproxy.net/file/Y2FqRDhWSWZjVGxFY0VOL1ZHTG1wNk5qc3NURmVRYmJzYTV2TzBTK1pBak1aQ2F2WUxFc2VOWmlNcUY1eXBGZmErVS8xTDFBdVE2V2U5WFB3KzNlN0RkUlJBTlpiSFpPL1Q5ODZaYVFEN0k9/Jon_Bellion_-_Fashion_(Hydr0.org).mp3"
+      }
+    ]
+  },
+  {
+    "id": "6465ae7c4ebe8871853d8970",
+    "name": "For my friend",
+    "songs": [
+      {
+        "id": "6465ad534ebe8871853d8969",
+        "name": "Wrecked",
+        "mp3": "https://rildi.sunproxy.net/file/Y2FqRDhWSWZjVGxFY0VOL1ZHTG1wNk5qc3NURmVRYmJzYTV2TzBTK1pBak1aQ2F2WUxFc2VOWmlNcUY1eXBGZmtacDhmbTFaa0xtbWFwbnlJeFdMUFYwcXcxVUp1OHVrY3M1NCtRYTRsSk09/Imagine_Dragons_-_Wrecked_(Hydr0.org).mp3"
+      },
+      {
+        "id": "6465ad574ebe8871853d896a",
+        "name": "Monday",
+        "mp3": "https://rildi.sunproxy.net/file/Y2FqRDhWSWZjVGxFY0VOL1ZHTG1wNk5qc3NURmVRYmJzYTV2TzBTK1pBak1aQ2F2WUxFc2VOWmlNcUY1eXBGZkNjOWg0QTNkQkhuSnFjdmhUanA3YnkyYUh2WDVySHFzaTd1MHEwWjMvMDA9/Imagine_Dragons_-_Monday_(Hydr0.org).mp3"
+      },
+      {
+        "id": "6465ad5c4ebe8871853d896b",
+        "name": "He Is The Same",
+        "mp3": "https://rildi.sunproxy.net/file/Y2FqRDhWSWZjVGxFY0VOL1ZHTG1wNk5qc3NURmVRYmJzYTV2TzBTK1pBak1aQ2F2WUxFc2VOWmlNcUY1eXBGZldHc29MZ2ZnSEF5SnRUMDlDZG5NeGVhMi9RM05sRUVJaWVxUnFTZHlhQ0k9/Jon_Bellion_-_He_Is_The_Same_(Hydr0.org).mp3"
+      },
+      {
+        "id": "6465ad604ebe8871853d896c",
+        "name": "All Time Low",
+        "mp3": "https://rildi.sunproxy.net/file/Y2FqRDhWSWZjVGxFY0VOL1ZHTG1wNk5qc3NURmVRYmJzYTV2TzBTK1pBak1aQ2F2WUxFc2VOWmlNcUY1eXBGZkFsejlDYkIzd0hWU3BMYlhKTmJ2Q3VJRGRNQUhhWVEycllPYnpEbENxRzA9/Jon_Bellion_-_All_Time_Low_(Hydr0.org).mp3"
+      }
+    ]
+  }
+]

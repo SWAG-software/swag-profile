@@ -1,0 +1,106 @@
+2023-05-07 00:28:09.468-0400 [main]  INFO [swag-profile,,] 3959 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-05-07 00:28:09.590-0400 [main]  INFO [swag-profile,,] 3959 --- [c.c.c.ConfigServicePropertySourceLocator] : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2023-05-07 00:28:09.591-0400 [main]  WARN [swag-profile,,] 3959 --- [c.c.c.ConfigServicePropertySourceLocator] : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/swag-profile/test": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2023-05-07 00:28:09.593-0400 [main]  INFO [swag-profile,,] 3959 --- [c.e.s.SwagProfileApplicationKt          ] : The following 1 profile is active: "test"
+2023-05-07 00:28:11.544-0400 [main]  INFO [swag-profile,,] 3959 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=29163e9d-b79b-3c23-9639-cf095ec9dd5b
+2023-05-07 00:28:12.854-0400 [main]  INFO [swag-profile,,] 3959 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8028 (http)
+2023-05-07 00:28:12.873-0400 [main]  INFO [swag-profile,,] 3959 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-05-07 00:28:12.874-0400 [main]  INFO [swag-profile,,] 3959 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-07 00:28:12.996-0400 [main]  INFO [swag-profile,,] 3959 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-05-07 00:28:12.996-0400 [main]  INFO [swag-profile,,] 3959 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3384 ms
+2023-05-07 00:28:13.912-0400 [pool-1-thread-1]  WARN [swag-profile,,] 3959 --- [o.s.c.s.a.z.ZipkinAutoConfiguration     ] : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused; nested exception is java.net.ConnectException: Connection refused}]
+2023-05-07 00:28:17.708-0400 [main]  INFO [swag-profile,,] 3959 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-05-07 00:28:18.052-0400 [main]  WARN [swag-profile,,] 3959 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-07 00:28:18.237-0400 [main]  INFO [swag-profile,,] 3959 --- [o.s.b.a.e.web.EndpointLinksResolver     ] : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-07 00:28:18.459-0400 [main]  INFO [swag-profile,,] 3959 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8028 (http) with context path ''
+2023-05-07 00:28:18.508-0400 [main]  INFO [swag-profile,,] 3959 --- [c.e.s.SwagProfileApplicationKt          ] : Started SwagProfileApplicationKt in 12.01 seconds (JVM running for 15.205)
+2023-05-07 00:28:18.771-0400 [RMI TCP Connection(2)-127.0.0.1]  INFO [swag-profile,,] 3959 --- [o.s.a.r.c.CachingConnectionFactory      ] : Attempting to connect to: [localhost:5672]
+2023-05-07 00:28:18.771-0400 [RMI TCP Connection(1)-127.0.0.1]  INFO [swag-profile,,] 3959 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-07 00:28:18.773-0400 [RMI TCP Connection(1)-127.0.0.1]  INFO [swag-profile,,] 3959 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-05-07 00:28:18.779-0400 [RMI TCP Connection(1)-127.0.0.1]  INFO [swag-profile,,] 3959 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 5 ms
+2023-05-07 00:28:18.788-0400 [RMI TCP Connection(2)-127.0.0.1]  WARN [swag-profile,,] 3959 --- [o.s.b.a.amqp.RabbitHealthIndicator      ] : Rabbit health check failed
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:94)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:88)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:535)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 47 common frames omitted
+
+2023-05-07 00:28:45.829-0400 [Thread-3]  INFO [swag-profile,,] 3959 --- [o.s.c.s.a.z.ZipkinAutoConfiguration     ] : Flushing remaining spans on shutdown
+2023-05-07 00:28:45.840-0400 [SpringApplicationShutdownHook]  INFO [swag-profile,,] 3959 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-05-07 00:29:03.671-0400 [main]  INFO [swag-profile,,] 4127 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-05-07 00:29:03.922-0400 [main]  INFO [swag-profile,,] 4127 --- [c.c.c.ConfigServicePropertySourceLocator] : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2023-05-07 00:29:03.925-0400 [main]  WARN [swag-profile,,] 4127 --- [c.c.c.ConfigServicePropertySourceLocator] : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/swag-profile/test": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2023-05-07 00:29:03.930-0400 [main]  INFO [swag-profile,,] 4127 --- [c.e.s.SwagProfileApplicationKt          ] : The following 1 profile is active: "test"
+2023-05-07 00:29:06.004-0400 [main]  INFO [swag-profile,,] 4127 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=29163e9d-b79b-3c23-9639-cf095ec9dd5b
+2023-05-07 00:29:06.983-0400 [main]  INFO [swag-profile,,] 4127 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8028 (http)
+2023-05-07 00:29:06.992-0400 [main]  INFO [swag-profile,,] 4127 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-05-07 00:29:06.992-0400 [main]  INFO [swag-profile,,] 4127 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-07 00:29:07.149-0400 [main]  INFO [swag-profile,,] 4127 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-05-07 00:29:07.150-0400 [main]  INFO [swag-profile,,] 4127 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3162 ms
+2023-05-07 00:29:08.676-0400 [pool-1-thread-1]  WARN [swag-profile,,] 4127 --- [o.s.c.s.a.z.ZipkinAutoConfiguration     ] : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused; nested exception is java.net.ConnectException: Connection refused}]
+2023-05-07 00:29:16.250-0400 [Thread-3]  INFO [swag-profile,,] 4127 --- [o.s.c.s.a.z.ZipkinAutoConfiguration     ] : Flushing remaining spans on shutdown
+2023-05-07 00:29:18.030-0400 [main]  INFO [swag-profile,,] 4127 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-05-07 00:29:19.408-0400 [main]  WARN [swag-profile,,] 4127 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-07 00:29:19.782-0400 [main]  INFO [swag-profile,,] 4127 --- [o.s.b.a.e.web.EndpointLinksResolver     ] : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-07 00:29:20.148-0400 [main]  INFO [swag-profile,,] 4127 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8028 (http) with context path ''
+2023-05-07 00:29:20.222-0400 [main]  INFO [swag-profile,,] 4127 --- [c.e.s.SwagProfileApplicationKt          ] : Started SwagProfileApplicationKt in 18.802 seconds (JVM running for 19.95)

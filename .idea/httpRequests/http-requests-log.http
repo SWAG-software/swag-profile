@@ -1,0 +1,90 @@
+GET http://localhost:8028/profile/646564830b991786e54f220e
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-18T013711.200.json
+
+###
+
+GET http://localhost:8028/profile/646564830b991786e54f220e
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-17T231240.200.json
+
+###
+
+GET http://localhost:8028/profile/favArtist/646564830b991786e54f220e
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-17T231220.200.json
+
+###
+
+GET http://localhost:8028/profile/playlist/646564830b991786e54f220e
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-17T231216.200.json
+
+###
+
+GET http://localhost:8028/profile/playlist/646564830b991786e54f220e
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-17T230603.200.json
+
+###
+
+GET http://localhost:8028/profile/646564830b991786e54f220e
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-17T230600.200.json
+
+###
+
+GET http://localhost:8028/profile/646564830b991786e54f220e
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-17T224924.200.json
+
+###
+
+GET http://localhost:8028/profile/646564830b991786e54f220e
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-17T224807.200.json
+
+###
+
+GET http://localhost:8028/profile/646564830b991786e54f220e
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-17T223732.200.json
+
+###
+
+GET http://localhost:8028/profile/646564830b991786e54f220e
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-17T223442.500.json
+
+###
+
